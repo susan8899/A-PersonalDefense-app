@@ -27,7 +27,10 @@
         <activity
             android:name=".MuayActivity"
             android:launchMode="standard" />
-        <activity android:name=".HelpActivity"></activity>
+        <activity android:name=".HelpActivity" />
+        <activity android:name=".QuizYourselfActivity" />
+        <activity android:name=".dialog.CustomDialog2" />
+        <activity android:name=".dialog.CustomDialog3"></activity>
     </application>
 
 </manifest>

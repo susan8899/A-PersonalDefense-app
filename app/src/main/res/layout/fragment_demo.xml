@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.susancarrera.personaldefense.fragment.DemoFragment"
-    android:background="@mipmap/bg_0"
+    android:background="@drawable/bg_0"
     >
 
     <ListView
@@ -14,6 +14,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:divider="@null"
-        android:dividerHeight="0dp"></ListView>
+        android:dividerHeight="0dp"
+        android:background="@android:color/background_light"
+        >
 
-</FrameLayout>
+ </ListView>
+
+</LinearLayout>

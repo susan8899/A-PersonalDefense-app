@@ -14,6 +14,7 @@ import android.widget.ListView;
 import com.example.susancarrera.personaldefense.ArmedDefenseActivity;
 import com.example.susancarrera.personaldefense.HelpActivity;
 import com.example.susancarrera.personaldefense.KenpoActivity;
+import com.example.susancarrera.personaldefense.QuizYourselfActivity;
 import com.example.susancarrera.personaldefense.R;
 import com.example.susancarrera.personaldefense.SituationalAwarnessActivity;
 import com.example.susancarrera.personaldefense.adapter.ListNormalAdapter;
@@ -33,14 +34,12 @@ public class DemoFragment extends Fragment {
         contentList.add("Situational Awareness");
         contentList.add("Armed Defense");
         contentList.add("Self-Defense");
-        contentList.add("Help in different languages");
-        contentList.add("Quiz");
-        contentList.add("5");
-        contentList.add("6");
-        contentList.add("7");
-        contentList.add("8");
-        contentList.add("9");
-        contentList.add("10");
+        contentList.add("How to say Help in other Languages");
+        contentList.add("Quiz Yourself");
+        contentList.add("Video");
+        contentList.add("More Videos");
+        contentList.add("Another One");
+        contentList.add("One More");
 
 
     }
@@ -81,10 +80,10 @@ public class DemoFragment extends Fragment {
                         startActivity(intent3);
                         break;
 
-//                    case 5:
-//                        Intent intent5 = new Intent(getActivity(), AdvanceViewPagerActivity.class);
-//                        startActivity(intent5);
-//                        break;
+                    case 4:
+                        Intent intent4 = new Intent(getActivity(), QuizYourselfActivity.class);
+                        startActivity(intent4);
+                        break;
 //                    case 6:
 //                        Intent intent6 = new Intent(getActivity(), ActivityA.class);
 //                        intent6.putExtra("StringInfo","fromDemoFragment");
@@ -101,14 +100,6 @@ public class DemoFragment extends Fragment {
 //                    case 7:
 //                        Intent intent7 = new Intent(getActivity(), ResultActivity.class);
 //                        startActivity(intent7);
-//                        break;
-//                    case 8:
-//                        Intent intent8 = new Intent(getActivity(), RadioGroupActivity.class);
-//                        startActivity(intent8);
-//                        break;
-//                    case 9:
-//                        Intent intent9 = new Intent(getActivity(), CheckBoxActivity.class);
-//                        startActivity(intent9);
 //                        break;
 
 

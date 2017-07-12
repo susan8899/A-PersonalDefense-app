@@ -10,14 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@android:color/darker_gray"
-        android:text="this is the about the app section
-testing new lines
-
-this totally works
-
-
-
-3spaces"
+        android:text="this is the about the app section"
         android:textAlignment="center"
         android:textSize="27sp" />
 
