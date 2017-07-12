@@ -16,7 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SituationalAwarnessActivity"></activity>
+        <activity android:name=".SituationalAwarnessActivity" />
+        <activity android:name=".ArmedDefenseActivity" />
+        <activity
+            android:name=".KenpoActivity"
+            android:launchMode="standard" />
+        <activity
+            android:name=".KravActivity"
+            android:launchMode="standard" />
+        <activity
+            android:name=".MuayActivity"
+            android:launchMode="standard" />
+        <activity android:name=".HelpActivity"></activity>
     </application>
 
 </manifest>

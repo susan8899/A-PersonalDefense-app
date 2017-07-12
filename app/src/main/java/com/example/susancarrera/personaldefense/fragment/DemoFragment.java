@@ -11,6 +11,9 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.example.susancarrera.personaldefense.ArmedDefenseActivity;
+import com.example.susancarrera.personaldefense.HelpActivity;
+import com.example.susancarrera.personaldefense.KenpoActivity;
 import com.example.susancarrera.personaldefense.R;
 import com.example.susancarrera.personaldefense.SituationalAwarnessActivity;
 import com.example.susancarrera.personaldefense.adapter.ListNormalAdapter;
@@ -64,18 +67,19 @@ public class DemoFragment extends Fragment {
                         Intent intent = new Intent(getActivity(), SituationalAwarnessActivity.class);
                         startActivity(intent);
                         break;
-//                    case 1:
-//                        Intent intent1 = new Intent(getActivity(), ScaleTypeActivity.class);
-//                        startActivity(intent1);
-//                        break;
-//                    case 3:
-//                        Intent intent3 = new Intent(getActivity(),NotificationActivity.class);
-//                        startActivity(intent3);
-//                        break;
-//                    case 4:
-//                        Intent intent4 = new Intent(getActivity(),AdvanceListViewActivity.class);
-//                        startActivity(intent4);
-//                        break;
+                    case 1:
+                        Intent intent1 = new Intent(getActivity(), ArmedDefenseActivity.class);
+                        startActivity(intent1);
+                        break;
+                    case 2:
+                        Intent intent2 = new Intent(getActivity(),KenpoActivity.class);
+                        Bundle bundle = new Bundle();
+                        startActivity(intent2);
+                        break;
+                    case 3:
+                        Intent intent3 = new Intent(getActivity(),HelpActivity.class);
+                        startActivity(intent3);
+                        break;
 
 //                    case 5:
 //                        Intent intent5 = new Intent(getActivity(), AdvanceViewPagerActivity.class);

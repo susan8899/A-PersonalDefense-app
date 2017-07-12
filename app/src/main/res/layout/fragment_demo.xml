@@ -4,11 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.susancarrera.personaldefense.fragment.DemoFragment">
+    tools:context="com.example.susancarrera.personaldefense.fragment.DemoFragment"
+    android:background="@mipmap/bg_0"
+    >
 
     <ListView
+        android:cacheColorHint="#00000000"
         android:id="@+id/fragment_demo_lv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></ListView>
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"></ListView>
 
 </FrameLayout>

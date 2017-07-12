@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/black"
+    android:background="@mipmap/bg_0"
     android:orientation="horizontal"
     tools:context="com.example.susancarrera.personaldefense.MainActivity">
 
@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:layout_alignParentTop="true"
-        android:background="@android:color/holo_blue_bright">
+        android:background="@mipmap/greenheader">
 
         <TextView
             android:layout_width="wrap_content"
@@ -46,11 +46,10 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="3"
-            android:text="HOME"
             android:textSize="22sp"
             android:gravity="center"
             android:layout_gravity="center_vertical"
-            android:textColor="@android:color/holo_red_light"/>
+            android:background="@mipmap/homenew"/>
 
         <View
             android:layout_width="0dp"
@@ -64,11 +63,10 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="3"
-            android:text="ABOUT"
             android:textSize="22sp"
             android:gravity="center"
             android:layout_gravity="center_vertical"
-            android:textColor="@android:color/black"/>
+            android:background="@mipmap/aboutnew"/>
 
     </LinearLayout>
 
