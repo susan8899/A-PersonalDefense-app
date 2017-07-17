@@ -1,5 +1,8 @@
 package com.example.susancarrera.personaldefense.fragment;
 
+import android.animation.Animator;
+import android.animation.ObjectAnimator;
+import android.animation.ValueAnimator;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
@@ -7,8 +10,16 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AccelerateInterpolator;
+import android.view.animation.BounceInterpolator;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.susancarrera.personaldefense.R;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -51,20 +62,49 @@ public class GunPicFragment extends Fragment {
         return fragment;
     }
 
+    @BindView(R.id.gun_pic)
+    ImageView iv;
+
+    @OnClick(R.id.animator_alpha1)
+    public void alpha(){
+        ObjectAnimator animator = ObjectAnimator.ofFloat(iv, "alpha", 1, 0, 1,0,1,0,1,0,1,0,1,0,1,0,1);
+        animator.setDuration(3000);
+        animator.start();
+    }
+    @OnClick(R.id.animator_alpha1)
+    public void rotation(){
+        ObjectAnimator animator = ObjectAnimator.ofFloat(iv, "rotationY", 0,360,0 ); //rotationX
+        animator.setDuration(4000);
+        animator.setInterpolator(new AccelerateInterpolator());
+        animator.setRepeatMode(ValueAnimator.REVERSE);
+        animator.setRepeatCount(1);
+        animator.start();
+    }
+
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_gun_pic, container, false);
+        View view = inflater.inflate(R.layout.fragment_gun_pic, container, false);
+        ButterKnife.bind(this, view);
+        iv.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+            }
+        });
+        return view;
     }
 
 

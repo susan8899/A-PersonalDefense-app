@@ -10,13 +10,26 @@
 
 
     <TextView
-        android:id="@+id/TitleA"
+        android:id="@+id/TitleKM"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_weight="2"
         android:gravity="center"
         android:textSize="50sp"
-        android:text="Krav-Maga Info"/>
+        android:text="Krav-Maga"/>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:text="scroll pic for gestures"/>
+
+    <ImageView
+        android:id="@+id/krav_pic"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_weight="2"
+        android:src="@mipmap/krav_maga"/>
 
     <LinearLayout
         android:layout_width="match_parent"

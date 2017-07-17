@@ -1,13 +1,32 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.susancarrera.personaldefense.fragment.GunPicFragment">
+    tools:context="com.example.susancarrera.personaldefense.fragment.GunPicFragment"
+    android:background="@color/white">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Picture of Gun goes here. Will animate when clicked" />
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="Click to animate(does not animate)"-->
+        <!--android:textSize="23sp"-->
+        <!--android:gravity="center_horizontal"/>-->
 
-</LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/gun_pic"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@mipmap/glock_19"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/animator_alpha1"
+        android:layout_height="100dp"
+        android:layout_width="110dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="click me"/>
+</RelativeLayout>

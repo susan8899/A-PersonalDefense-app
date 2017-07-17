@@ -3,4 +3,13 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="kenpo1"> American Kenpo is a martial art characterized
+        by the use of quick and powerful strikes delivered from all of the body\'s natural weapons, powered
+        by rapid stance transitions. </string>
+    <string name="kenpo3">American Kenpo emphasizes lightning fast techniques to destroy an attacker in seconds.
+        Kicks are less common, and usually directed at the lower body because high kicks are slower to execute and
+        potentially compromise the practitioner\'s balance, higher kicks are taught to more advanced and capable
+        practitioners </string>
+
+
 </resources>

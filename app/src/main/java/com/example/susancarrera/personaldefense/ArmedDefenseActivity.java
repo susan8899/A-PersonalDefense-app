@@ -26,6 +26,8 @@ public class ArmedDefenseActivity extends BaseActivity {
         list.add(new GunInfoFragment());
         list.add(new GAGunLawsFragment());
         list.add(new GunPicFragment());
+
+
         BaseViewPagerAdapter pagerAdapter =
                 new BaseViewPagerAdapter(getSupportFragmentManager(),list);
         viewPager.setAdapter(pagerAdapter);

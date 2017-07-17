@@ -12,10 +12,12 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.susancarrera.personaldefense.ArmedDefenseActivity;
+import com.example.susancarrera.personaldefense.HandlerExampleActivity;
 import com.example.susancarrera.personaldefense.HelpActivity;
 import com.example.susancarrera.personaldefense.KenpoActivity;
 import com.example.susancarrera.personaldefense.QuizYourselfActivity;
 import com.example.susancarrera.personaldefense.R;
+import com.example.susancarrera.personaldefense.ServiceActivity;
 import com.example.susancarrera.personaldefense.SituationalAwarnessActivity;
 import com.example.susancarrera.personaldefense.adapter.ListNormalAdapter;
 
@@ -34,8 +36,11 @@ public class DemoFragment extends Fragment {
         contentList.add("Situational Awareness");
         contentList.add("Armed Defense");
         contentList.add("Self-Defense");
-        contentList.add("How to say Help in other Languages");
+        contentList.add("Help in other Languages");
         contentList.add("Quiz Yourself");
+        contentList.add("Example of Service&Broadcast");
+        contentList.add("RunnableHandlerExample");
+
         contentList.add("Video");
         contentList.add("More Videos");
         contentList.add("Another One");
@@ -83,6 +88,14 @@ public class DemoFragment extends Fragment {
                     case 4:
                         Intent intent4 = new Intent(getActivity(), QuizYourselfActivity.class);
                         startActivity(intent4);
+                        break;
+                    case 5:
+                        Intent intent5 = new Intent(getActivity(), ServiceActivity.class);
+                        startActivity(intent5);
+                        break;
+                    case 6:
+                        Intent intent6 = new Intent(getActivity(), HandlerExampleActivity.class);
+                        startActivity(intent6);
                         break;
 //                    case 6:
 //                        Intent intent6 = new Intent(getActivity(), ActivityA.class);
