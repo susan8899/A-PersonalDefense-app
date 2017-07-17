@@ -38,7 +38,7 @@ public class DemoFragment extends Fragment {
         contentList.add("Self-Defense");
         contentList.add("Help in other Languages");
         contentList.add("Quiz Yourself");
-        contentList.add("Example of Service&Broadcast");
+        contentList.add("ExampleService&Broadcast");
         contentList.add("RunnableHandlerExample");
 
         contentList.add("Video");
@@ -97,23 +97,7 @@ public class DemoFragment extends Fragment {
                         Intent intent6 = new Intent(getActivity(), HandlerExampleActivity.class);
                         startActivity(intent6);
                         break;
-//                    case 6:
-//                        Intent intent6 = new Intent(getActivity(), ActivityA.class);
-//                        intent6.putExtra("StringInfo","fromDemoFragment");
-//                        intent6.putExtra("IntegerInfo", 10);
-//                        Bundle bundle = new Bundle();
-//                        BaseBean bean = new BaseBean();
-//                        bean.setName("bean");
-//                        bundle.putString("StringBundle","FromBundleDemo");
-//                        bundle.putInt("IntegerBundle",101);
-//                        bundle.putSerializable("Object",bean);
-//                        intent6.putExtra("Bundle",bundle);
-//                        startActivity(intent6);
-//                        break;
-//                    case 7:
-//                        Intent intent7 = new Intent(getActivity(), ResultActivity.class);
-//                        startActivity(intent7);
-//                        break;
+
 
 
                     default:

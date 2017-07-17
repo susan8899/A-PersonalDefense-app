@@ -10,7 +10,7 @@
         android:id="@+id/activity_service_tv"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:text="Waiting(code is correct, not sure why it doesnt work)"
+        android:text="Waiting"
         android:textSize="20sp"
         android:gravity="center"
         android:layout_alignParentTop="true"/>
@@ -18,7 +18,7 @@
     <Button
         android:id="@+id/activity_service_start"
 
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="60sp"
         android:layout_centerInParent="true"
         android:gravity="center"
@@ -29,9 +29,10 @@
     <Button
         android:id="@+id/activity_service_stop"
 
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="60sp"
         android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
         android:gravity="center"
         android:textSize="30sp"
         android:text="Stop Service"/>

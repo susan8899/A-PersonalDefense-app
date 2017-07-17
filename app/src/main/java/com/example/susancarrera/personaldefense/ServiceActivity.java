@@ -1,6 +1,5 @@
 package com.example.susancarrera.personaldefense;
 
-
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
